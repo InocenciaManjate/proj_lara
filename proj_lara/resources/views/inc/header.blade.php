@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="{{url('/')}}">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="{{url('/recluso')}}">Recluso</a></li>
-        <li><a href="#">Guarda</a></li>
+        <li><a href="{{url('/guarda')}}">Guarda</a></li>
        
       </ul>
       
