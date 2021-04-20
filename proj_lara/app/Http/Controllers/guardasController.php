@@ -12,6 +12,7 @@ class guardasController extends Controller
 }
 
 
+
     public function adicionar(Request $request){
     	// $this->validate($request,[
      //     'apelido'=> 'required',
@@ -23,7 +24,7 @@ class guardasController extends Controller
 
     	// ]);
 
-    	$guarda_models = new Article();
+    	$guarda_models = new  QuardaModel();
     	$guarda_models->apelido = $request->apelido;
     	$guarda_models->nome = $request->nome;
     	$guarda_modelss->data = $request->data;
