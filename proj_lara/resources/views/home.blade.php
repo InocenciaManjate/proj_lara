@@ -73,16 +73,24 @@
   </thead>
   <tbody>
   
-      
+     @if(count($guarda_models)> 0)
+        @foreach($guarda_model->all() as $guarda_model)
+   
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-     
+      <td>{{ $guarda_model-> id}}</td>
+      <td>{{ $guarda_model-> apelido}}</td>
+      <td>{{ $guarda_model-> nome}}</td>
+      <td>{{ $guarda_model-> data}}</td>
+      <td>{{ $guarda_model-> numero}}</td>
+      <td>{{ $guarda_model-> cadeia}}</td>
+      <td>
+        <a href="{{ url('')}}" class= "label label-primary">Visualizar</a> |
+        <a href="{{ url('')}}" class= "label label-success">Actualizar</a> 
+        
+      </td>
     </tr>
+     @endforeach
+    @endif
     
   </tbody>
 </table>
