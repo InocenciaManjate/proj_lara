@@ -2,6 +2,10 @@
  <div class="container">
  	<div class="row">
  		<legend>Lista</legend>
+    @if(session('info'))
+          {{ session('info')}}
+    @endif
+
  		<table class="table table-striped table-hover ">
   <thead>
     <tr>
