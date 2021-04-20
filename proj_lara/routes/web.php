@@ -14,3 +14,9 @@
 
 
 Route::get('/','CreatesController@home');
+Route::get('/recluso', function(){
+	return view('recluso');
+
+});
+
+Route::post('/insert','CreatesController@add');
