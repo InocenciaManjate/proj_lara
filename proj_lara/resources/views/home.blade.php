@@ -16,7 +16,7 @@
       <th>Data de Nascimento</th>
       <th>Numero de identificacao</th>
       <th>Cadeia</th>
-      <th>Accao</th>
+      
       
     </tr>
   </thead>
@@ -33,11 +33,6 @@
       <td>{{ $article-> data}}</td>
       <td>{{ $article-> numero}}</td>
       <td>{{ $article-> cadeia}}</td>
-      <td>
-      	<a href="{{ url('')}}" class= "label label-primary">Visualizar</a> |
-      	<a href="{{ url('')}}" class= "label label-success">Actualizar</a> 
-      	
-      </td>
     </tr>
      @endforeach
     @endif
@@ -83,11 +78,7 @@
       <td>{{ $guarda_model-> data}}</td>
       <td>{{ $guarda_model-> numero}}</td>
       <td>{{ $guarda_model-> cadeia}}</td>
-      <td>
-        <a href="{{ url('')}}" class= "label label-primary">Visualizar</a> |
-        <a href="{{ url('')}}" class= "label label-success">Actualizar</a> 
-        
-      </td>
+     
     </tr>
      @endforeach
     @endif
