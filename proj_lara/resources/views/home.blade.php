@@ -18,7 +18,7 @@
   </thead>
   <tbody>
     @if(count($articles)> 0)
-        @foreach($artcles->all() as @article)
+        @foreach($artcles->all() as $article)
 
       
     <tr>
