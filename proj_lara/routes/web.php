@@ -18,5 +18,9 @@ Route::get('/recluso', function(){
 	return view('recluso');
 
 });
+Route::get('/guarda', function(){
+	return view('guarda');
+
+});
 
 Route::post('/insert','CreatesController@add');
