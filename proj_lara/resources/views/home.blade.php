@@ -1,7 +1,7 @@
 @include('inc.header')
  <div class="container">
  	<div class="row">
- 		<legend>Lista</legend>
+ 		<legend>Lista Recluso</legend>
     @if(session('info'))
           {{ session('info')}}
     @endif
@@ -46,6 +46,48 @@
 </table>
  		
  	</div>	
+ </div>
+
+
+<hr>
+
+ <div class="container">
+  <div class="row">
+    <legend>Lista Guarda</legend>
+    @if(session('info'))
+          {{ session('info')}}
+    @endif
+
+    <table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Apelido</th>
+      <th>Nome</th>
+      <th>Data de Nascimento</th>
+      <th>Numero de identificacao</th>
+      <th>Cadeia</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+  
+      
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+     
+    </tr>
+    
+  </tbody>
+</table>
+    
+  </div>  
  </div>
 
 @include('inc.footer')
