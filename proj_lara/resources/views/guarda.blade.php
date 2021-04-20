@@ -22,7 +22,7 @@
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Apelido</label>
       <div class="col-lg-10">
-        <input type="text"  name="apelido "class="form-control" id="inputApelido" placeholder="Apelido">
+        <input type="text"  name="apelido" class="form-control" id="inputApelido" placeholder="Apelido">
       </div>
     </div>
     <div class="form-group">
