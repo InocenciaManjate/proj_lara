@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-6">
-			<form class="form-horizontal" method="POST" action="{{url('/insert')}}">
+			<form class="form-horizontal" method="POST" action="{{url('/insertGuarda')}}">
         {{csrf_field()}}
   <fieldset>
     <legend>Quarda</legend>
@@ -56,10 +56,10 @@
     
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
       </div>
        
-    <a href="{{url('/')}}" class="btn btn-primary">Voltar</a>
+    <!-- <a href="{{url('/')}}" class="btn btn-primary">Voltar</a> -->
     </div>
   </fieldset>
 </form>
