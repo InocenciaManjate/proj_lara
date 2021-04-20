@@ -20,7 +20,7 @@ Route::get('/recluso', function(){
 });
 
 
-Route::get('/','guardasController@home')
+Route::get('/','guardasController@home');
 Route::get('/guarda', function(){
 	return view('guarda');
 
