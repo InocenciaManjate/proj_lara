@@ -8,6 +8,16 @@
   <fieldset>
     <legend>Quarda</legend>
 
+    @if(count($errors) > 0)
+     @foreach($errors->all() as $error)
+
+      <div class="alert alert-danger">
+        {{$error}}
+      </div>
+
+     @endforeach
+     @endif
+
     
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Apelido</label>
