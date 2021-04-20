@@ -34,7 +34,7 @@ class guardasController extends Controller
 
         $todos4 = QuardaModel::all();
 
-    	return redirect('/')->back()->with('guarda_models', $todos4)->with('info','Salvo com sucesso');
+    	return redirect('/')->with('guarda_models', $todos4)->with('info','Salvo com sucesso');
         // return redirect()->back()->with('guarda_models', $todos4)->with('info','Salvo com sucesso');
     }	
 }
