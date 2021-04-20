@@ -18,6 +18,9 @@ Route::get('/recluso', function(){
 	return view('recluso');
 
 });
+
+
+Route::get('/','guardasController@home')
 Route::get('/guarda', function(){
 	return view('guarda');
 
