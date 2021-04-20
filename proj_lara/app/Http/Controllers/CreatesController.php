@@ -4,25 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\QuardaModel;
 
 class CreatesController extends Controller
 {
     public function home(){
     	$articles = Article::all();
-    	return view('home', ['articles'=> $articles]);
+        $guarda_models = QuardaModel::all();
+    	// return view('home')->with('articles',$articles);
+
+        return view('home')->with('articles',$articles)->with('guarda_models',$guarda_models);
 }
 
 
     public function add(Request $request){
-    	// $this->validate($request,[
-     //     'apelido'=> 'required',
-     //     'nome'=> 'required',
-     //     'tipoCrime'=> 'required',
-     //     'data'=> 'required',
-     //     'numero'=> 'required',
-     //     'cadeia'=> 'required'
-
-    	// ]);
 
     	$articles = new Article();
     	$articles->apelido = $request->apelido;
@@ -32,6 +27,9 @@ class CreatesController extends Controller
     	$articles->numero = $request->numero;
     	$articles->cadeia = $request->cadeia;
     	$articles->save();
-    	return redirect('/')->with('info','Salvo com sucesso');
+
+        $todos = Article::all();
+    	return redirect('/')->with('articles', $todos)->with('info','Salvo com sucesso');
+        // return redirect()->back()->with('articles', $todos)->with('info','Salvo com sucesso');
     }	
 }
