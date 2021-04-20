@@ -23,7 +23,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav">
         <li class="active"><a href="{{url('/')}}">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="{{url('/recluso')}}">Registo</a></li>
+        <li><a href="{{url('/recluso')}}">Recluso</a></li>
+        <li><a href="#">Guarda</a></li>
        
       </ul>
       
