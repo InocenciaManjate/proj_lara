@@ -27,10 +27,14 @@ class guardasController extends Controller
     	$guarda_models = new  QuardaModel();
     	$guarda_models->apelido = $request->apelido;
     	$guarda_models->nome = $request->nome;
-    	$guarda_modelss->data = $request->data;
+    	$guarda_models->data = $request->data;
     	$guarda_models->numero = $request->numero;
     	$guarda_models->cadeia = $request->cadeia;
     	$guarda_models->save();
-    	return redirect('/')->with('info','Salvo com sucesso');
+
+        $todos4 = QuardaModel::all();
+
+    	return redirect('/')->back()->with('guarda_models', $todos4)->with('info','Salvo com sucesso');
+        // return redirect()->back()->with('guarda_models', $todos4)->with('info','Salvo com sucesso');
     }	
 }
