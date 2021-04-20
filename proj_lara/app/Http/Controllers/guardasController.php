@@ -12,7 +12,7 @@ class guardasController extends Controller
 }
 
 
-    public function add(Request $request){
+    public function adicionar(Request $request){
     	// $this->validate($request,[
      //     'apelido'=> 'required',
      //     'nome'=> 'required',
