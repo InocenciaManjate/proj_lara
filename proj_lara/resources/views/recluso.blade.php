@@ -21,7 +21,7 @@
     <div class="form-group">
       <label for="inputEmail" class="col-lg-2 control-label">Apelido</label>
       <div class="col-lg-10">
-        <input type="text"  name="apelido "class="form-control" id="inputApelido" placeholder="Apelido">
+        <input type="text"  name="apelido" class="form-control" id="inputApelido" placeholder="Apelido">
       </div>
     </div>
     <div class="form-group">
@@ -66,10 +66,10 @@
     
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Salvar</button>
       </div>
        
-    <a href="{{url('/')}}" class="btn btn-primary">Voltar</a>
+    <!-- <a href="{{url('/')}}" class="btn btn-primary">Voltar</a> -->
     </div>
   </fieldset>
 </form>
