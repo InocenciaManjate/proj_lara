@@ -27,4 +27,4 @@ Route::get('/guarda', function(){
 });
 
 Route::post('/insert','CreatesController@add');
-Route::post('/insert','guardasController@add');
+Route::post('/insert','guardasController@adicionar');
