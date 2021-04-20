@@ -17,6 +17,7 @@ class CreateQuardaModelsTable extends Migration
             $table->increments('id');
             $table->string('apelido');
             $table->string('nome');
+            $table->string('numero');
             $table->string('data');
             $table->string('cadeia');
             $table->timestamps();
