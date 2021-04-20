@@ -74,7 +74,7 @@
   <tbody>
   
      @if(count($guarda_models)> 0)
-        @foreach($guarda_model->all() as $guarda_model)
+        @foreach($guarda_models->all() as $guarda_model)
    
     <tr>
       <td>{{ $guarda_model-> id}}</td>
