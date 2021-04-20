@@ -22,7 +22,7 @@
   </thead>
   <tbody>
     @if(count($articles)> 0)
-        @foreach($articles->all() as $article)
+    @foreach($articles->all() as $article)
 
       
     <tr>
