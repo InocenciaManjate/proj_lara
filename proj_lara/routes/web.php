@@ -14,17 +14,20 @@
 
 
 Route::get('/','CreatesController@home');
+
+
 Route::get('/recluso', function(){
 	return view('recluso');
 
 });
 
 
-Route::get('/','guardasController@home');
+Route::get('/guardas','guardasController@home');
+
 Route::get('/guarda', function(){
 	return view('guarda');
 
 });
 
 Route::post('/insert','CreatesController@add');
-Route::post('/insert','guardasController@adicionar');
+Route::post('/insertGuarda','guardasController@adicionar');
